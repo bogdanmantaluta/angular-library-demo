@@ -1,0 +1,14 @@
+@mixin create-light-theme {
+  $light-primary-color: #5f9ea0;
+  $light-secondary-color: white;
+  $light-font-color: white;
+  $light-font-family: Times New Roman, italic;
+
+  :root {
+    --theme-color-primary: #{$light-primary-color};
+    --theme-color-secondary: #{$light-secondary-color};
+    --theme-font-color: #{$light-font-color};
+    --theme-font-family: #{$light-font-family};
+  }
+}
+

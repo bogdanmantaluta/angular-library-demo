@@ -1,0 +1,44 @@
+//$theme : light !default;
+//
+//@mixin set-theme($new-theme){
+//  $theme: $new-theme !global;
+//}
+//
+//$theme-colors:(
+//  light:(
+//    primary-color: cadetblue,
+//    secondary-color: white,
+//    font-color:white,
+//  ),
+//  dark:(
+//    primary-color: #3f3f9e,
+//    secondary-color: gray,
+//    font-color:gray,
+//  )
+//);
+//
+//@function get-color($color,$theme: $theme){
+//  @return map-get(map-get($theme-colors,$theme),$color);
+//}
+//
+//
+//
+
+@use "./light-theme" as light;
+@use "./dark-theme" as dark;
+@use "./vars";
+
+@mixin create-theme($theme: light){
+  @if $theme==light{
+    @include light.create-light-theme;
+  }
+  @else if $theme==dark {
+    @include dark.create-dark-theme;
+  }
+}
+//could be separate for typography and colors or different other styles
+@function get-style($type){
+  @return map-get(vars.$theme-map,$type);
+}
+
+

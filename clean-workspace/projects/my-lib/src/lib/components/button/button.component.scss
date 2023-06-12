@@ -1,0 +1,11 @@
+@use "../../../theme/theme";
+
+button{
+  font-family: theme.get-style(font-family), serif;
+  background-color: theme.get-style(primary);
+  color: theme.get-style(font-color);
+  border:1px solid theme.get-style(secondary);
+  border-radius: 10px;
+  width:100px;
+  height: 50px;
+}

@@ -1,0 +1,14 @@
+
+@mixin create-dark-theme {
+  $dark-primary-color: #3f3f9e;
+  $dark-secondary-color: gray;
+  $dark-font-color: gray;
+  $dark-font-family: Georgia, sans-serif;
+
+  :root {
+    --theme-color-primary: #{$dark-primary-color};
+    --theme-color-secondary: #{$dark-secondary-color};
+    --theme-font-color: #{$dark-font-color};
+    --theme-font-family: #{$dark-font-family};
+  }
+}

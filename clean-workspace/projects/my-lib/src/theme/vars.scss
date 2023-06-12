@@ -1,0 +1,9 @@
+$theme-map : (
+  // can contain a default var(--theme-primary-color,red)
+  // can be expanded to include different variants: ex base, secondary, etc.
+    'primary': var(--theme-color-primary),
+    'secondary': var(--theme-color-secondary),
+    'font-color': var(--theme-font-color),
+    'font-familiy': var(--theme-font-family)
+  )
+

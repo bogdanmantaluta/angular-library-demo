@@ -1,0 +1,13 @@
+{
+  "$schema": "../../node_modules/ng-packagr/ng-package.schema.json",
+  "dest": "../../dist/my-lib",
+  "lib": {
+    "entryFile": "src/public-api.ts"
+  },
+  "assets": [
+    "src/theme/theme.scss",
+    "src/theme/dark-theme.scss",
+    "src/theme/light-theme.scss",
+    "src/theme/vars.scss"
+  ]
+}
