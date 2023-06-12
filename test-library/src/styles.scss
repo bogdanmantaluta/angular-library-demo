@@ -1,0 +1,3 @@
+@use "../node_modules/my-lib/src/theme/theme";
+
+@include theme.create-theme(light);
